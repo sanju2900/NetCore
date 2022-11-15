@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Entity_Framework",
+    "\\Entity_Framework\\Controllers",
+    "\\Entity_Framework\\Models",
+    "\\Entity_Framework\\Views",
+    "\\Entity_Framework\\Views\\Clubs"
+  ],
+  "SelectedNode": "\\Entity_Framework\\Controllers\\StudentsController.cs",
+  "PreviewInSolutionExplorer": false
+}
