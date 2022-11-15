@@ -16,6 +16,8 @@
           <th>Sales Amounts</th>
           <th>Sales City</th>
           <th>Sales Email Id</th>
+          <th>Update Sales Details</th>
+          <th>Delete Sales Details</th>
         </tr>
     </thead>
     <tbody>
@@ -28,6 +30,10 @@
             <td>@x.amount</td>
             <td>@x.city</td>
             <td>@x.email_id</td>
+            <td><a href="/Edit_Sales?id=@x.s_id" class="btn btn-success"> Update</a></td>
+            <td><a href="/delete_sales?id=@x.s_id" class="btn btn-danger"> Delete</a></td>
+
+          
         </tr>
         }
     </tbody>

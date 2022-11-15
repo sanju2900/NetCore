@@ -10,6 +10,7 @@ unique(email_id)
 )
 --delete from sales_detail
 
+--update sales_detail set s_id=0 where s_id=1;
 
 insert into sales_detail values ('mukesh',2000,'Delhi','muke@gmail.com')
 insert into sales_detail values ('manish',4000,'Delhi','manish@gmail.com')
@@ -32,7 +33,16 @@ as
 insert into sales_detail values(@p_s_name,@p_s_amount,@p_city,@p_email)
 exec create_sales 'Raju',6000,'Delhi','Raju@gmail.com'
 
+create or alter procedure update_sales(@p_s_id int,@p_s_name varchar(max), @p_s_amount BigInt, @p_city varchar(max))
+as
+update sales_detail set s_name=@p_s_name,amount=@p_s_amount,city=@p_city where s_id=@p_s_id
+select * from sales_detail 
+exec update_sales 5,'Raj',6987,'Patna' 
 
+create or alter procedure delete_sales(@sid int)
+as
+Delete from sales_detail where s_id=@sid
+EXEC delete_sales 4
 
 create or alter procedure create_sale as
 select s_name,amount,city,email_id from sales_detail where amount <=5000

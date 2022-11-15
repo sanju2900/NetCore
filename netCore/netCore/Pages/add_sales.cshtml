@@ -17,6 +17,17 @@
        </div>
    </div>
 }
+@if (Model.error_msg.Length > 0)
+{
+   <div>
+        <div class="row-cols-1">
+            <div class="alert alert-danger alert-dismissible">
+                @Model.error_msg
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    </div>
+}
 <form method="post">
 
 <div class="row-cols-1">
@@ -39,8 +50,10 @@
         <br>
         <br>
        <div>
-            <button class="btn btn-success" onclick="submit()">Submit</button>
-            <button class="btn btn-danger">Cancel</button>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn-primary">Reset</button>
+            <a href ="/sales" type="reset" class="btn btn-danger">Cancel</a>
         </div>
 </div>
 </form>
+

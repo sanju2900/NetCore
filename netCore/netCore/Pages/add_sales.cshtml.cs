@@ -9,6 +9,7 @@ namespace netCore.Pages
     {
        public Sales_info infos = new Sales_info();
        public string success_msg = "";
+        public string error_msg = "";
         public void OnPost()
         {
             try
@@ -43,11 +44,15 @@ namespace netCore.Pages
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Sql related problem");
+                error_msg = ex.Message;
+                return;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("C# related problem");
+                error_msg=ex.Message;
+                return;
             }
             infos.s_name = "";
             infos.amount = 0;
@@ -55,6 +60,7 @@ namespace netCore.Pages
             infos.email_id = "";
 
              success_msg = "Succefully added";
+            error_msg = "Error -sql problem";
 
             //            Response.Redirect("/sales");
 

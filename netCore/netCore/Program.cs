@@ -1,5 +1,7 @@
 
 
+using Microsoft.Extensions.FileProviders;
+
 namespace netCore
 {
     public class Program
@@ -15,6 +17,7 @@ namespace netCore
             // Add services to the container.
             builder.Services.AddRazorPages();
 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -23,6 +26,9 @@ namespace netCore
                 app.UseExceptionHandler("/Error");
             }
             app.UseStaticFiles();
+
+
+
 
             app.UseRouting();
 

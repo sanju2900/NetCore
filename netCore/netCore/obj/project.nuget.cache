@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AGPRBWb7UoOIF3EPTmS4mXne0Rl5Kdp+E3OkHCNPbNAInr/C548ZPf4BbXnuupVY21i0chcnp3Y7tpbVEt8niQ==",
+  "dgSpecHash": "gUv2n1ccT3lLTSveEHHOHPS/BwFIEvvO+d2mjr1IDye29igfKHGqWJxCJ9EJD34c22eRTadzJFXO2EzwP8jn+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\28-10-2022\\netCore\\netCore\\netCore.csproj",
+  "projectFilePath": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\NetCore\\netCore\\netCore\\netCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kumari.sanjana\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\kumari.sanjana\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

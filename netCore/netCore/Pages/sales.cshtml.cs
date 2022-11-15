@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
+using Microsoft.VisualBasic;
 using System.Data.SqlClient;
 
 namespace netCore.Pages
@@ -42,7 +43,7 @@ namespace netCore.Pages
 
 
                 }
-                list_name.ForEach(x=> Console.WriteLine(x.s_id+" "+x.s_name+" "+x.amount+" "+x.city+" "+x.email_id));
+               // list_name.ForEach(x=> Console.WriteLine(x.s_id+" "+x.s_name+" "+x.amount+" "+x.city+" "+x.email_id));
                
                 //Console.Log(list_name);
                 sqlCon.Close();
@@ -58,6 +59,7 @@ namespace netCore.Pages
                 Console.WriteLine("C# related problem");
             }
         }
+
 
     }
 

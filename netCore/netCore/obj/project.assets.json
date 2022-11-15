@@ -633,11 +633,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\28-10-2022\\netCore\\netCore\\netCore.csproj",
+      "projectUniqueName": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\NetCore\\netCore\\netCore\\netCore.csproj",
       "projectName": "netCore",
-      "projectPath": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\28-10-2022\\netCore\\netCore\\netCore.csproj",
+      "projectPath": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\NetCore\\netCore\\netCore\\netCore.csproj",
       "packagesPath": "C:\\Users\\kumari.sanjana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\28-10-2022\\netCore\\netCore\\obj\\",
+      "outputPath": "C:\\Users\\kumari.sanjana\\OneDrive - Entain Group\\Desktop\\SQL_project\\NetCore\\netCore\\netCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
