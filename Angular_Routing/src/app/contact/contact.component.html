@@ -1,0 +1,30 @@
+ <h1 style="margin: 10px;text-align: center;color:darkgreen;">We can also use same service page in Contact Page</h1> 
+ 
+
+    <!-- <ul>
+        <li *ngFor="let item of users">
+    {{item.name}}
+        </li>
+      </ul> --> 
+      
+    <table class="table table-striped" style="background-color:aqua ;" border="1" >
+        <thead class="table-dark">
+          <tr>
+            <th scope="col"> ID </th>
+            <th scope="col" >First Name  </th>
+            <th scope="col">Last Name  </th>
+            <th scope="col"> Email </th>
+            <th scope="col"> Profile Picture </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let apicall of users.data">
+            <td>{{apicall.id}}</td>
+            <td>{{apicall.first_name}}</td>
+            <td>{{apicall.last_name}}</td>
+            <td>{{apicall.email}}</td>
+            <td><img class="img-fluid img-responsive rounded product-image" src={{apicall.avatar}}> </td>
+          </tr>
+      
+        </tbody>
+      </table>
