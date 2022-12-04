@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color:bisque ;">
+    <h1 style="color:red;text-align: center;">HTML And JavaScript</h1>
+    <h3>Explain and create a program with a variable with block and global scope</h3>
+
+    <ul style="color:brown ;">
+      
+       <h4><b><u><li>Block Scope</li></u></b></h4>
+       <h6><p>In Javascript if we are using if else statement and we define variable using var then we can Access
+        variable var element anywhere which is not possible in other language . So to make variable private we use 
+        "let".
+       </p>
+       <p>In JavaScript, var is function scoped and let is block-scoped. If you try to use var c = 'hello'; inside 
+        the if statement in the above program, the whole program works, as c is treated as a local variable.</p>
+        </h6>
+        <h4><b><u><li>Global Scope</li></u></b></h4>
+        <h6><p>If we define any variable outside function then we can access it globally i.e any where in the page. </p></h6>
+       
+    </ul>
+    <h3 style="color:red;text-align: center;">Code to explain</h3>
+    <p>
+        let a = 'Hello';
+
+     function join() {
+
+    // local variable
+    let b = 'World';
+
+    console.log(a + ' ' + b);
+
+    if (b == 'World') {
+
+        // block-scoped variable
+        let c = 'hello';
+
+        console.log(a + ' ' + b + ' ' + c);
+    }
+
+    // variable c cannot be accessed here
+    console.log(a + ' ' + b + ' ' + c);
+    }
+
+     join();
+    </p>
+    <ul>
+        <li>"a" is a global variable. It can be accessed anywhere in the program</li>
+        <li>"b"  is a local variable. It can be accessed only inside the function join</li>
+        <li>"c" is a block-scoped variable. It can be accessed only inside the if statement block.</li>
+    </ul>
+  <p>Hence, in the above program, the first two console.log() work without any issue.
+
+    However, we are trying to access the block-scoped variable c outside of the block in the third console.log().
+     This will throw an error.</p>
+    <script src="block.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
