@@ -16,6 +16,15 @@
       </tr>
     </thead>
     <tbody>
+      <style>
+        img {
+  border: 4px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100px;
+  
+}
+      </style>
       <tr *ngFor="let apicall of users.data">
         <td>{{apicall.id}}</td>
         <td>{{apicall.first_name}}</td>
